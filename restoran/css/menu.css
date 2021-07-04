@@ -1,0 +1,133 @@
+#nachalo {
+    width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+#nachalo > ul {
+    width: 112px;
+
+    text-align: center;
+}
+
+#nachalo > div {
+    width: 80PX;
+    height: 80PX;
+
+    background-image: var(--nachalo-img);
+}
+
+.head {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+#spisok-menu {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#spisok-menu > nav {
+    width: 43%;
+}
+
+#spisok-menu > nav > div > li {
+    margin-bottom: 30px;
+}
+
+#spisok-menu > nav > div > ul  {
+    margin-left: 5%;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#spisok-menu > nav > div > ul > li > ul > li {
+    margin-bottom: 10px;
+}
+
+#spisok-menu > nav > div > a {
+    width: 40%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#spisok-menu2 {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#spisok-menu2 > nav {
+    width: 43%;
+    margin: auto;
+}
+
+#spisok-menu2 > nav > div > li {
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+#spisok-menu2 > nav > div > ul  {
+    margin-left: 5%;
+}
+
+#spisok-menu2 > nav > div > ul > li > ul > li {
+    margin-bottom: 10px;
+}
+
+#spisok-menu2 > nav > div > a {
+    width: 40%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+
+.list > li {
+    padding: 0;
+    list-style-type: none;
+}
+
+.list > ul > li {
+    display: block;
+}
+
+.list > ul > li:nth-child(3) ~ li {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.75s cubic-bezier(0, 1, 0, 1);
+}
+
+.list > ul > li:nth-child(3) ~ li.visible {
+    max-height: 500px;
+    transition: max-height 0.75s ease-in-out;
+}
+

@@ -1,0 +1,98 @@
+.border {
+    border: none;
+}
+
+input {
+    transition: all 1s ease;
+}
+
+#block2 {
+    width: 80%;
+    
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+#block2 > ul {
+    text-align: center; 
+}
+
+.button {
+	width: 10%;
+    padding: 10px;
+
+    margin: auto;
+    margin-top: 10px;
+
+    font-family: Open sans;
+    font-weight: normal;
+    font-size: 16px;
+
+	text-align: center;
+	color: var(--logo-text);
+
+    cursor: pointer;
+ 
+    outline: 1px solid;
+    outline-color: var(--logo-square);
+    outline-offset: 0px;
+  
+    transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.button:hover {
+    outline-color: var(--logo-square-hover);
+    outline-offset: 10px;
+    color: var(--color);
+}
+
+#bron {
+    width: 30%;
+}
+
+#bron > nav > ul {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+#bron > nav > ul > li {
+    width: 100%;
+
+    line-height: 30px;
+}
+
+.time {
+    width: 30%;
+    border: none;
+}
+
+.time::-webkit-calendar-picker-indicator {
+    width: 16px;
+    height: 16px;
+
+    background-image: var(--clock);
+}
+
+.gost {
+    width: 38%;
+}
+
+.name {
+    width: 60%;
+}
+
+.email {
+    width: 90%;
+}
+
+.wishes {
+    width: 90%;
+}
+
+.form-control {
+    width: 90%;
+}
+
+

@@ -1,0 +1,40 @@
+#block3 {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner h3 {
+    padding: 10px;
+    animation: anime-H3 1.3s ease-out;
+}
+
+.carousel-inner p {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    animation: anime-P 1.6s ease-out;
+}
+   
+@keyframes anime-H3 {
+    from {
+        opacity: 0;
+        transform: translateX(-2000px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes anime-P {
+    from {
+        opacity: 0;
+        transform: translateX(2000px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,143 @@
+div {
+    width: 100%;
+    height: 100%;
+}
+
+div form {
+    width: 400px;
+    height: 100%;
+
+    display: flex;
+
+    margin: auto;
+    
+    background-color: #fff;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 16);
+}
+
+div form > ul {
+    width: 90%;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+div form > ul > li {
+    text-align: center;
+}
+
+div form > ul > ul {
+    min-width: 300px;
+
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+div form > ul > li {
+    line-height: 35px;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+
+    border: unset;
+    outline: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+button {
+    width: 200px;
+    height: 40px;
+
+    margin-top: 20px;
+
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    outline: none;
+
+    transition: 1s ease;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.text {
+    list-style-type: none;
+}
+
+.text-form {
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: normal;
+
+    text-align: right;
+    text-decoration: underline;
+}
+
+.text-button {
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.text-reg {
+    font-family: Ubuntu;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+#register-form {
+    display: none;
+    position: fixed;
+
+    z-index: 3;
+}
+
+#login-form {
+    display: none;
+    position: fixed;
+
+    z-index: 3;
+}
+
+#dark_background {
+	width: 100%;
+	
+	display: none;	
+	content: '';
+	position: fixed;
+
+	align-items: center;
+	justify-content: center;
+
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(15, 15, 15, 0.8);
+
+    z-index: 1;
+}
+
+.form {
+    width: 400px;
+    height: 100%;
+}
+
+.href {
+    color: #000;
+}

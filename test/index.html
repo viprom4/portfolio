@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic,latin' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/aileron" type="text/css"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <p class="logo">Aurora<span>Back</span></p>
+        </a>
+        <nav class="menu">
+            <ul class="text menu_list">
+                <a href="index.html">
+                    <li class="textName btn-one">home</li>
+                </a>
+                <li class="textName btn-one">
+                    <a href="" class="menu_link"></a>Family</a>
+                    <ul class="text sud-menu_list">
+                        <li>
+                            <a href="" class="sud-menu_link">Developer</a>
+                        </li>
+                        <li>
+                            <a href="" class="sud-menu_link">Plaers</a>
+                        </li>
+                        <li>
+                            <a href="" class="sud-menu_link">Users</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="textName btn-one">
+                    <a href="" class="menu_link"></a>Contact</a>
+                    <ul class="text sud-menu_list">
+                        <li>
+                            <a href="" class="sud-menu_link">VK</a>
+                        </li>
+                        <li>
+                            <a href="" class="sud-menu_link">YouTube</a>
+                        </li>
+                        <li>
+                            <a href="" class="sud-menu_link">Discord</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="textName btn-one button_input">Login</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="dark_background">
+            <div class="qwerty form">
+                <div id="login_form" class="form">
+                    <form action="php/index.php" method="POST">
+                        <input type="hidden" name="form" value="reg">
+                        <a href="#" class="close"></a>
+                        <ul class="text">
+                            <ul class="text">
+                                <li class="text-reg">Регистрация:</li>
+                                <li class="text-form">
+                                    <a class="create_account_button href" href="#">Авторизоваться</a>
+                                </li>
+                            </ul>
+                            <li>
+                                <input required name="name" autocomplete="off" type="text" placeholder="Придумайте логин">
+                            </li>
+                            <li>
+                                <input required name="email" autocomplete="off" type="email" placeholder="Введите email">
+                            </li>
+                            <li>
+                                <input required name="password" autocomplete="off" type="password" placeholder="Придумайте пароль">
+                            </li>
+                            <li>
+                                <input required name="confirm" autocomplete="off" type="password" placeholder="Повторите пароль">
+                            </li>
+                            <button required name="button" type="submit" class="text-button">Зарегистрироваться</button>
+                        </ul>
+                    </form>
+                </div>
+                <div id="register_form">
+                    <form action="php/index.php" method="POST">
+                        <input type="hidden" name="form" value="log">
+                        <a href="#" class="close"></a>
+                        <ul class="text">
+                            <ul class="text">
+                                <li class="text-reg">Авторизация:</li>
+                                <li class="text-form">
+                                    <a class="login_account_button href" href="#">зарегистрироваться</a>
+                                </li>
+                            </ul>
+                            <li>
+                                <input required name="email" autocomplete="off" type="text" placeholder="Введите email">
+                            </li>
+                            <li>
+                                <input required name="password" autocomplete="off" type="password" placeholder="Введите пароль">
+                            </li>
+                            <button required name="button" type="submit" class="text-button">Авторизоваться</button>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <section id="block1">
+            <nav>
+                <ul class="textHead2 text">
+                    <li>Hello, I know that you are interested in this page. We bring you the best games of 2021!</li>
+                    <li class="qwerty">Everything is only the best and only for you</li>
+                </ul>
+                <p class="textHead btn btn3 ">Welcome</p>
+            </nav>
+        </section>
+
+        <section id="block2">
+            <nav>
+                <ul>
+                    <li class="text textHeadBlock2">who are we?</li>
+                </ul>
+                <div class="vl"></div>
+                <ul class="text">
+                    <li class="text-bl2">We are part of AuroraBack!</li>
+                    <li class="textBlock2">First of all, we are independent game developers and not only. We would love to hear your opinion about our games and will be happy to add content for the sake of our audience.</li>
+                    <li class="textBlock2">transition-property - specifies a list of properties that will be animated; properties not listed here will change normally. You can animate all properties for a specific element by specifying the value all. If you have not specified any properties, the default is all.</li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li class="text textHeadBlock2">What are we doing?</li>
+                </ul>
+                <div class="vl"></div>
+                <ul class="text">
+                    <li class="text-bl2">We are part of AuroraBack!</li>
+                    <li class="textBlock2">transition-timing-function - a timing function that specifies the acceleration and deceleration points over a certain period of time to control the change in the speed of the animation. Simply put, you can use this property to specify behavior for an animation. For example, we can speed up the animation at the beginning and slow down at the end, or vice versa. Bezier curves are used to define the animation process. In general, transition-timing-function allows you to do a lot of different behaviors for animations, this is a whole topic for an article, so we will not go deep here.</li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="block3">
+            <nav>
+                <video class="block1Video" controls="controls" autoplay loop muted>
+                    <source src="img/qwerty.mp4" type="video/mp4" autoplay="autoplay">
+                </video>
+                <ul class="text">
+                    <li class="text textHeadBlock2">our creativity</li>
+                    <li class="textBlock3">Neurons transmit information to one another through electrochemical signals. They make up the motor nerves that allow you to type an essay, the sensory nerves that let you feel a fluffy dog, and your brain, allowing to remember the content of this module. They have a number of helper cells, ranging from astrocytes, to microglia, to ependymal cells as well. You will come to appreciate the structure and function of neurons and the comrade cells which help to maintain the optimal function of the nervous system. </li>
+                    <li class="textBlock3">Neurons transmit information to one another through electrochemical signals. They make up the motor nerves that allow you to type an essay, the sensory nerves that let you feel a fluffy dog, and your brain, allowing to remember the content of this module. They have a number of helper cells, ranging from astrocytes, to microglia, to ependymal cells as well. You will come to appreciate the structure and function of neurons and the comrade cells which help to maintain the optimal function of the nervous system. </li>
+                    <li class="textBlock3">Neurons transmit information to one another through electrochemical signals. They make up the motor nerves that allow you to type an essay, the sensory nerves that let you feel a fluffy dog, and your brain, allowing to remember the content of this module. They have a number of helper cells, ranging from astrocytes, to microglia, to ependymal cells as well. You will come to appreciate the structure and function of neurons and the comrade cells which help to maintain the optimal function of the nervous system. </li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <ul class="text textFooter">
+            <li>©2020 All rights reserved</li>
+            <div class="vlFooter"></div>
+            <a href="">
+                <li>Terms of use</li>
+            </a>
+        </ul>
+        <ul class="text contentFotter">
+            <a href=""><li><img src="img/vk.svg"></li></a>
+            <a href=""><li><img src="img/youtube.svg"></li></a>
+            <a href=""><li><img src="img/discord.svg"></li></a>
+        </ul>
+    </footer>
+</body>
+<script src="js/index.js"></script>
+</html>

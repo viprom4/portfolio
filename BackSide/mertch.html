@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<head lang="RU">
+		<meta charset="utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic,latin' rel='stylesheet' type='text/css'/> <!--подключение шрифта-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!--подключение Animate.css-->
+		<link rel="stylesheet" type="text/css" href="css\mertch.css">
+		<title>BackSide</title>
+		<script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+	</head>
+	
+	<body class="">
+		<header>
+			<nav>
+				<a href="index.php">
+					<p class="header_text">Back<span>Side</span></p>
+				</a>
+				<ul>
+					<li class="button_DarkTheme">DarkTheme</li>
+					<a href="">
+						<li class="header_text1">Мерч</li>
+					</a>
+					<a href="https://discord.gg/BmxhmZ3">
+						<li class="button">Discord</li>
+					</a>
+					<div class="vl"></div>
+
+					
+						<a href="#input">
+							<li class="button_input">Вход\Регистрация</li>
+						</a>
+					
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div id="dark_background">
+				<div class="authorization authorization_main form_text" id="login_form">
+					<form action="php/reg-log.php" method="post">
+						<input type="hidden" name="form" value="log">
+						<ul>
+							<li class="form_blok1">
+								<div class="form_heading">Вход:</div>
+								<div class="form_footering"></div>
+								<div id="close_button" class="close_but1"><u>Закрыть</u></div>
+							<li>
+								<label for="email_log">Email:</label>
+                				<input name="email_log" required maxlength="32" type="email">
+							</li>
+							<li>
+								<label for="password_log">Пароль:</label>
+                				<input name="password_log" required maxlength="16" type="password">
+							</li>
+							<li class="form_blok3">
+								<button type="submit" class="button_text">Войти</button>
+								<div class="form_footering">
+									<a class="create_account_button" href="#">
+										<u>Создать аккаунт</u>
+									</a>
+								</div>
+							</li>
+						</ul>
+						<p>или</p>
+						<ul class="authorization_footer">
+							<li>Войти через:</li>
+							<li><img src="img/google.svg"></li>
+							<li><img src="img/vk.svg"></li>
+							<li><img src="img/steam.svg"></li>
+						</ul>
+					</form>
+				</div>
+				<div class="reg reg_main form_text" id="register_form">
+					<form action="php/reg-log.php" method="post">
+						<input type="hidden" name="form" value="reg">
+						<ul>	
+							<li class="form_blok1">
+								<div class="form_heading">Регистрация:</div>
+								<div id="close_button" class="close_but2"><u>Закрыть</u></div>
+							</li>
+							<li>
+								<input name="name" required maxlength="128" type="text" placeholder="Введите Никнейм">
+							</li>
+							<li>
+								<input name="email" required maxlength="32" type="email" placeholder="Введите ваш email">
+							</li>
+							<li>
+								<input name="password" required maxlength="16" type="password" placeholder="Придумайте пароль">
+							</li>
+							<li>
+								<input name="confirm" required maxlength="16" type="password" placeholder="Повторите пароль">
+							</li>
+							<li class="form_blok3">
+								<button type="submit" class="button_text">Зарегистрироваться</button>
+								<div class="form_footering">
+									<a href="#">
+										<u class="login_account_button">Войти в аккаунт</u>
+									</a>
+								</div>
+							</li>
+						</ul>
+						<p>или</p>
+						<ul class="reg_footer">
+							<li>Зарегистрироваться через:</li>
+							<li><img src="img/google.svg"></li>
+							<li><img src="img/vk.svg"></li>
+							<li><img src="img/steam.svg"></li>
+						</ul>
+					</form>
+				</div>		
+			</div>
+				
+			<p>Наш Мерч</p>
+
+			<section id="blok3">
+				<nav>
+					<a href="mertch-razdel.html" class="mertch-block">
+						<img src="img/backside1.png">
+						<ul class="text main_text-white">
+							<li class="margin2 button_img">Подробнее<i class="right"></i></li>
+						</ul>
+					</a>
+					<a href="mertch-razdel.html">
+						<li class="text button_mertch">Худи BACKSIDE</li>
+					</a>
+				</nav>
+				<nav>
+					<a href="mertch-razdel.html">
+						<img src="img/backside1.png">
+						<ul class="text main_text-white">
+							<li class="margin2 button_img">Подробнее  <i class="right"></i></li>
+						</ul>
+					</a>
+					<a href="mertch-razdel.html">
+						<li class="text button_mertch">Худи BACKSIDE</li>
+					</a>
+				</nav>
+				<nav>
+					<a href="mertch-razdel.html">
+						<img src="img/backside1.png">
+						<ul class="text main_text-white">
+							<li class="margin2 button_img">Подробнее  <i class="right"></i></li>
+						</ul>
+					</a>
+					<a href="mertch-razdel.html">
+						<li class="text button_mertch">Худи BACKSIDE</li>
+					</a>
+				</nav>
+			</section>
+
+		</main>
+
+        <footer>
+			<ul>
+				<li class="text text-footer">Онлайн на нашем сервере в Discord: <span>100</span></li>
+				<li class="button">Discord</li>
+			</ul>
+        </footer>
+	</body>
+	<script src="js\index.js"></script>	
+</html>

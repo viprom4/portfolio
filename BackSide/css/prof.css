@@ -1,0 +1,616 @@
+* {
+	padding: 0; 
+	margin: 0;  
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+:root {
+	--vr: #000;
+	--main-bg: #fff;
+	--main-text: #000;
+	--main-text-white: #fff;
+	--header-text: #483D8B;
+	--span: #949494;
+	--blok-span: #7B68EE;
+	--span-hover: #B22222;
+	--text: #000;
+	--text-hover: #B22222;
+	--heading: #9370DB;
+	--button-bg: #7B68EE;
+	--button-input-bg: #000;
+	--button-intut-text: #fff;
+	--button-text: #fff;
+	--button-hover-bg: #fff;
+	--button-hover-text: #7B68EE;
+	--button_DarkTheme-bg: #000;
+	--button_DarkTheme-text: #fff;
+	--button_DarkTheme-hover-bg: #fff;
+	--button_DarkTheme-hover-text: #000;
+	--foto: url(blok2.jpg);
+	--form-link: #000;
+	--input-bg: #E5E5E5;
+	--authorization_main-bg: #fff;
+	--reg_main-bg: #fff;
+	--form-button_text: #fff;
+	--form-button_bg: #000;
+	--form-text: #000;
+	--form-heading: #000;
+	--form-footering: #000;
+	--form-imput-text: #000;
+	--close_button: #000;
+	--text-close_button: #fff;
+	--close_button-hover: #fff;
+}
+
+:root[data-theme='dark'] {
+	--vr: #fff;
+	--main-bg: #212121;
+	--main-text: #fff;
+	--header-text: #6a5acd;
+	--span: #dcdcdc;
+	--span-hover: #B22222;
+	--text: #fff;
+	--text-hover: #B22222;
+	--heading: #9370DB;
+	--button-bg: #7B68EE;
+	--button-input-bg: #fff;
+	--button-intut-text: #000;
+	--button-text: #fff;
+	--button-hover-bg: #fff;
+	--button-hover-text: #7B68EE;
+	--button_DarkTheme-bg: #fff;
+	--button_DarkTheme-text: #212121;
+	--button_DarkTheme-hover-bg: #212121;
+	--button_DarkTheme-hover-text: #fff;
+	--foto: url(blok2-dark.jpg);
+	--form-link: #fff;
+	--input-bg: #303030;
+	--reg_main-bg: #212121;
+	--authorization_main-bg: #212121;
+	--form-button_text: #000;
+	--form-button_bg: #fff;
+	--form-text: #fff;
+	--form-heading: #fff;
+	--form-footering: #fff;	
+	--form-imput-text: #fff;
+	--close_button: #fff;
+	--text-close_button: #000;
+	--close_button-hover: #212121;
+}
+
+.vl {
+	border-left: 2px solid; 
+	opacity: 0.4;
+    height: 40px;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+
+    color: var(--vr);
+}
+
+body {
+	width: 1230px;
+	height: 2248px;
+
+	margin: auto;
+
+	background-color: var(--main-bg);
+}
+
+section {
+	margin-top: 130px;
+}
+
+.text {
+	list-style-type: none;
+}
+
+header {
+	width: 100%;
+	height: 80px;
+
+	display: flex;
+	align-items: center;
+}
+
+header nav {
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+header ul {
+	width: 45%;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header ul li {
+	display: flex;
+	align-items: center;
+}
+
+span {
+	color: var(--span);
+	transition: color 1s ease;
+}
+
+span:hover {
+	color: var(--span-hover);
+	transform: scale(0.95);
+}
+
+.scale {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+    border-radius:1px;
+}
+
+.scale2 {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+    border-radius:40px;
+}
+
+.scale img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+}
+
+.scale2 img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+}
+
+.scale img:hover {
+	transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+.scale2 img:hover {
+	transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+.header_text {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 41px;
+
+	color: var(--header-text);
+}
+
+.header_text1 {
+	font-family: Ubuntu;
+	font-size: 18px;
+	line-height: 21px;
+	display: flex;
+	align-items: center;
+
+	color: var(--text);
+
+	transition: all 1s ease;
+}
+
+.header_text1:hover {
+	color: var(--text-hover);
+}
+
+.button {
+	display: inline-block;
+	padding: 15px 28px;
+
+	background: var(--button-bg);
+	border-radius: 23px;
+
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 16px;
+	color: var(--button-text);
+
+	transition: all 1s ease;
+}
+
+.button:hover {
+	background-color: var(--button-hover-dg);
+	color: var(--button-hover-text);
+	transform: scale(0.95);
+}
+
+.button_input {
+	display: inline-block;
+	padding: 15px 28px;
+
+	background: var(--button-input-bg);
+	border-radius: 23px;
+
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 16px;
+	color: var(--button-intut-text);
+
+	transition: all 1s ease;
+}
+
+.button_input:hover {
+	background-color: var(--button_DarkTheme-hover-bg);
+	color: var(--button_DarkTheme-hover-text);
+	transform: scale(0.95);
+}
+
+.button_DarkTheme {
+	display: inline-block;
+	padding: 10px 15px;
+
+	background: var(--button_DarkTheme-bg);
+	border-radius: 23px;
+
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 15px;
+	color: var(--button_DarkTheme-text);
+
+	transition: all 1s ease;
+}
+
+.button_DarkTheme:hover {
+	background-color: var(--button_DarkTheme-hover-bg);
+	color: var(--button_DarkTheme-hover-text);
+	transform: scale(0.95);
+}
+
+#block1 {
+    width: 90%;
+	height: 100%;
+
+	margin: auto;
+
+	margin-top: 100px;
+}
+
+#block1 > p {
+	margin-bottom: 50px;
+}
+
+#block1 > button {
+	margin-top: 80px;
+	margin-left: 41%;
+}
+
+#block1 > nav {
+    display: flex;
+    justify-content: space-between;
+
+	margin: auto;
+}
+
+#block1 > nav > nav {
+    width: 45%;
+    height: 100%;
+}
+
+#block1 > nav > nav > ul {
+    width: 100%;
+   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#block1 > nav > nav > ul > li {
+    margin: 40px 10px 0 10px;
+}
+
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.glav-text {
+    text-align: center;
+
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.left-text {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 23px;
+}
+
+.text-input {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 23px;
+}
+
+input {
+    width: 140px;
+
+    border: unset;
+	border-bottom: 1px solid #000;
+	outline: none;
+	opacity: 1;
+}
+
+footer {
+	width: 100%;
+
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+footer > ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.text-footer {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+
+/*------------------form--------------------*/
+
+a {
+	color: var(--form-link);
+	text-decoration: none;
+}
+
+form {
+	width: 380px;
+}
+
+#login_form {
+	display: none;
+	position: fixed;
+
+	z-index: 3;
+}
+
+#register_form {
+	display: none;
+	position: fixed;
+	z-index: 3;
+}
+
+#dark_background {
+	width: 100%;
+
+	display: none;	
+	content: '';
+	position: fixed;
+
+	align-items: center;
+	justify-content: center;
+
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.8);
+	z-index: 2;
+}
+
+.authorization input {
+	width: 250px;
+
+	margin: 5px 0px;
+	padding: 8px 15px;
+
+	border-radius: 20px;
+
+	outline: none;
+	border: none;
+	
+	color: var(--form-imput-text);
+	background-color: var(--input-bg);
+}
+
+.reg input {
+	width: 380px;
+
+	margin: 5px 0px;
+	padding: 8px 15px;
+
+	border-radius: 20px;
+
+	outline: none;
+	border: none;
+	
+	color: var(--form-imput-text);
+	background-color: var(--input-bg);
+}
+
+button {
+	padding: 15px 28px;
+
+	border: unset;
+	cursor: pointer;
+	outline: none;
+
+	border-radius: 23px;
+
+	background-color: var(--form-button_bg);
+
+	transition: all 1s ease;
+}
+
+button:hover {
+	background: var(--close_button-hover);
+	color: var(--text-close_button-hover);
+}
+
+.authorization_main  {
+	width: 700px;
+	height: 400px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: var(--authorization_main-bg);
+}
+
+.authorization_main > form > ul > li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.authorization_main > form > p {
+	text-align: center;
+
+	margin-top: 20px;
+}
+
+.authorization_main > form > ul > ul {
+	display: inline;
+}
+
+.reg_main  {
+	width: 700px;
+	height: 500px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: var(--reg_main-bg);
+}
+
+.reg_main > form > ul > li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.reg_main > form > p {
+	text-align: center;
+
+	margin-top: 20px;
+}
+
+.reg_main > form > ul > ul {
+	display: inline;
+}
+
+.button_text {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-size: 14px;
+
+	color: var(--form-button_text);
+}
+
+.form_text {
+	font-family: Ubuntu;
+	font-weight: normal;
+	font-size: 16px;
+
+	color: var(--form-text);
+}
+
+.form_heading {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+
+	color: var(--form-heading);
+}
+
+.form_footering {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+
+	color: var(--form-footering);
+}
+
+.form_blok1 {
+	margin-bottom: 30px;
+}
+
+.form_blok3 {
+	margin-top: 20px;
+}
+
+.authorization_footer {
+	width: 60%;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	margin-top: 20px;
+}
+
+.reg_footer {
+	width: 87%;
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	margin-top: 20px;
+}
+
+.authorization_footer img {
+	width: 30px;
+}
+
+.reg img {
+	width: 30px;
+}
+
+#close_button {
+	cursor: pointer;
+
+	display: inline-block;
+	padding: 15px 28px;
+
+	background: var(--close_button);
+	border-radius: 23px;
+
+	font-size: 12px;
+	line-height: 16px;
+	color: var(--text-close_button);
+
+	transition: all 1s ease;
+}
+
+#close_button:hover {
+	background: var(--close_button-hover);
+	color: var(--text-close_button-hover);
+}
